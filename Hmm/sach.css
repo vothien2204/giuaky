@@ -1,0 +1,259 @@
+.book-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.book-image {
+  display: block;
+  width: 220px;
+  height: 300px;
+  transition: all 0.3s ease;
+}
+
+/* The overlay effect */
+.book-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black overlay with opacity */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.book-card:hover .book-overlay {
+  opacity: 1;
+}
+.hinh {
+  width: 400px;
+  height: 600px;
+}
+.book-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.book-description {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.book-action {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 15px;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Roboto, sans-serif;
+}
+.bgts {
+  background: url(/images/anh-chup-trung-tam-dai-ngan-ha.jpg);
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+.iconft {
+  width: 50px;
+  height: 50px;
+} /* Hình ảnh hiển thị vừa với container */
+.hinh {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive text và padding */
+@media (max-width: 768px) {
+  .carousel-item .row {
+    flex-direction: column; /* Đổi thành dạng cột trên màn hình nhỏ */
+    text-align: center;
+  }
+
+  .carousel-item .p-5 {
+    padding: 2rem; /* Giảm padding cho màn hình nhỏ */
+  }
+
+  .carousel-item img {
+    margin-bottom: 1rem; /* Thêm khoảng cách giữa hình ảnh và văn bản */
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    max-height: 300px; /* Giới hạn chiều cao hình ảnh trên màn hình lớn */
+  }
+}
+/* Tạo hiệu ứng overlay */
+.book-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.book-image {
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.book-overlay {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 15px;
+}
+
+.book-card:hover .book-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Text Styling */
+.book-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.book-description {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .book-image {
+    max-height: 200px;
+  }
+
+  .book-description {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .book-image {
+    max-height: 250px;
+  }
+}
+.book-image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+.thh {
+  height: 240px;
+}
+.hh12 {
+  width: 100%;
+  height: 400px;
+}
+.hiii img {
+  width: 100%; /* Đảm bảo ảnh luôn chiếm toàn bộ chiều ngang */
+  height: auto; /* Chiều cao tự động theo tỉ lệ gốc */
+  object-fit: cover; /* Đảm bảo không bị méo hình */
+}
+
+/* Tùy chỉnh khoảng cách cho từng thiết bị */
+@media (max-width: 768px) {
+  .hiii {
+    margin-top: 10px;
+  }
+}
+.book-card {
+  width: 150px;
+  height: 200px;
+}
+.thien233 {
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px; /* Góc trên bên phải */
+  border-bottom-right-radius: 30px; /* Góc dưới bên phải */
+  border-bottom-left-radius: 30px; /* Góc dưới bên trái */
+  width: 100%;
+  padding: 10px;
+}
+.thien799 {
+  padding-left: 10px;
+}
+.thienn12 {
+  font-weight: 800;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 10px;
+}
